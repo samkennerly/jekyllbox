@@ -1,0 +1,33 @@
+# Site metadata
+title: Boris Grishenko
+description: I am invincible!
+encoding: 'utf-8'
+
+# File and folder paths
+source: .
+destination: ./_site
+exclude:
+  - .gitignore
+  - bin
+  - Dockerfile
+
+# Contact information
+email: boris@goldeneye.ru
+github_username: hubot
+twitter_username: Alancumming
+
+# Theme settings
+theme: minima
+safe: false
+
+# Filters
+future: false
+show_drafts: null
+unpublished: false
+
+# Markdown settings
+highlighter: rouge
+markdown: kramdown
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+kramdown:
+  input: GFM
