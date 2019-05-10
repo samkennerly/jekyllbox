@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -ex
+args="$@"
+context="$PWD"
+nametag='jekyllbox'
+
+# Build (or rebuild) Docker image
+docker build --tag $nametag $context
+
+# Delete any leftover images
+docker image prune --force
+
+# Run self-destructing interactive container
+docker run --rm --interactive --tty \
+  --publish '127.0.0.1:4000:4000' \
+  --volume "$context":/context \
+  --workdir /context \
+  $nametag $args
