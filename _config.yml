@@ -10,6 +10,8 @@ exclude:
   - .gitignore
   - bin
   - Dockerfile
+  - LICENCE
+  - README.md
 
 # Contact information
 email: boris@goldeneye.ru
