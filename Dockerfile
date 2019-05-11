@@ -10,4 +10,4 @@ RUN gem update --system && gem install \
   jekyll-sitemap:1.3.1 \
   minima:2.5.0
 
-CMD ["jekyll","serve","--host","0.0.0.0","--watch"]
+CMD ["jekyll","serve","--host","0.0.0.0","--port","4000","--watch"]
