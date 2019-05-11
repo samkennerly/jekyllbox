@@ -1,7 +1,32 @@
+# Theme and plugins
+# (Edit Dockerfile to install any necessary gems.)
+safe: false
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Site metadata
-title: Boris Grishenko
-description: I am invincible!
-encoding: 'utf-8'
+author: GitHub User
+description: Write an awesome description for your new site here.
+title: Your awesome title
+
+# Contact info
+email: your-email@domain.com
+github_username: jekyll
+twitter_username: jekyllrb
+
+# Content filters
+future: false
+show_drafts: null
+unpublished: false
+
+# Markdown -> HTML converter
+highlighter: rouge
+markdown: kramdown
+markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
+kramdown:
+  input: GFM
 
 # File and folder paths
 source: .
@@ -12,24 +37,3 @@ exclude:
   - Dockerfile
   - LICENCE
   - README.md
-
-# Contact information
-email: boris@goldeneye.ru
-github_username: hubot
-twitter_username: Alancumming
-
-# Theme settings
-theme: minima
-safe: false
-
-# Filters
-future: false
-show_drafts: null
-unpublished: false
-
-# Markdown settings
-highlighter: rouge
-markdown: kramdown
-markdown_ext: 'markdown,mkdown,mkdn,mkd,md'
-kramdown:
-  input: GFM
