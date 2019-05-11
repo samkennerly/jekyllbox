@@ -10,6 +10,7 @@ plugins:
 author: GitHub User
 description: Write an awesome description for your new site here.
 title: Your awesome title
+url: https://yourdomain.example
 
 # Contact info
 email: your-email@domain.com
