@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
+# Run Jekyll in an interactive, self-destructing container.
+# Publish Jekyll to "localhost:4000" outside the container.
+# Mount current folder as "/context" inside the container.
+
 set -ex
-args="$@"
+command="$@"
 context="$PWD"
 nametag='jekyllbox'
+netloc='127.0.0.1:4000'
 
-# Build (or rebuild) Docker image
 docker build --tag $nametag $context
-
-# Delete any leftover images
 docker image prune --force
-
-# Run self-destructing interactive container
 docker run --rm --interactive --tty \
-  --publish '127.0.0.1:4000:4000' \
+  --publish $netloc:4000 \
   --volume "$context":/context \
   --workdir /context \
-  $nametag $args
+  $nametag $command
