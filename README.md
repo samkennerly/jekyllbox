@@ -42,7 +42,7 @@ Press *CTRL-C* to stop the Jekyll server. The container will [self-destruct].
 
 [Shell script]: https://en.wikipedia.org/wiki/Shell_script
 [image]: https://docs.docker.com/get-started/
-[dangling]: https://docs.docker.com/config/pruning/#prune-images
+[dangling images]: https://docs.docker.com/config/pruning/#prune-images
 [publishes]: https://docs.docker.com/engine/reference/commandline/run/#publish-or-expose-port--p---expose
 [bind mounts]: https://docs.docker.com/storage/bind-mounts/
 
