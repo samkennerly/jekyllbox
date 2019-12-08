@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Run Jekyll in an interactive, self-destructing container.
 # Publish Jekyll to "localhost:4000" outside the container.
