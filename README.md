@@ -2,7 +2,10 @@
 
 Heeeeeeeeere's Jekyll.
 
-![Octojekyll](jekyllbox.png)
+<img
+  alt="Octojekyll"
+  src="https://raw.githubusercontent.com/samkennerly/posters/master/jekyllbox.png"
+  title="They're not sure it even is a cat.">
 
 ## abstract
 
